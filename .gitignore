@@ -1,0 +1,11 @@
+# folder
+/.idea
+/target
+/out
+src/main/java/META-INF/
+
+# file
+
+# file type
+*.iml
+.DS_Store
