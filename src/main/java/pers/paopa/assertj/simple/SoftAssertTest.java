@@ -8,13 +8,13 @@ public class SoftAssertTest {
     public void testSoftAssert() {
         int number1 = 5;
         int number2 = 10;
-        int except = 15;
+        int expected = 15;
 
         int actual = number1 + number2;
 
         SoftAssertions assertions = new SoftAssertions();
         assertions.assertThat(actual).isLessThan(10);
-        assertions.assertThat(actual).isEqualTo(except);
+        assertions.assertThat(actual).isEqualTo(expected);
         assertions.assertThat(actual).isEqualTo(11);
         assertions.assertAll();
     }

@@ -29,28 +29,28 @@ public class BDDMockitoTest {
 
     @Test
     public void testFindById1() {
-        Issue excepted = new Issue();
+        Issue expected = new Issue();
 
-        given(repository.find(1L)).willReturn(excepted);
+        given(repository.find(1L)).willReturn(expected);
         Issue actual = repository.find(1L);
 
-        Assertions.assertThat(actual).isSameAs(excepted);
+        Assertions.assertThat(actual).isSameAs(expected);
     }
 
     @Test
     public void testFindById2() {
-        Issue excepted = new Issue();
-        given(repository.find(eq(1L))).willReturn(excepted);
+        Issue expected = new Issue();
+        given(repository.find(eq(1L))).willReturn(expected);
         Issue actual = repository.find(1L);
-        Assertions.assertThat(actual).isSameAs(excepted);
+        Assertions.assertThat(actual).isSameAs(expected);
     }
 
     @Test
     public void testFindById3() {
-        Issue excepted = new Issue();
-        given(repository.find(anyLong())).willReturn(excepted);
+        Issue expected = new Issue();
+        given(repository.find(anyLong())).willReturn(expected);
         Issue actual = repository.find(1L);
-        Assertions.assertThat(actual).isSameAs(excepted);
+        Assertions.assertThat(actual).isSameAs(expected);
     }
 
     @Test
@@ -76,18 +76,18 @@ public class BDDMockitoTest {
 
     @Test
     public void testFindById5() {
-        Issue excepted = new Issue();
+        Issue expected = new Issue();
 
         given(repository.find(1L)).willAnswer((Answer<Issue>) invocation -> {
             Long idParameter = (Long) invocation.getArguments()[0];
             if (idParameter.equals(1L)) {
-                return excepted;
+                return expected;
             }
             return null;
         });
 
         Issue actual = repository.find(1L);
-        Assertions.assertThat(actual).isSameAs(excepted);
+        Assertions.assertThat(actual).isSameAs(expected);
 
     }
 }

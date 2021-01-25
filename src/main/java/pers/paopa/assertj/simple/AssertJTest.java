@@ -18,13 +18,13 @@ public class AssertJTest {
         // 1.Arrange
         int number1 = 5;
         int number2 = 10;
-        int except = 15;
+        int expected = 15;
 
         // 2.Act
         int actual = number1 + number2;
 
         // 3.Assert
-        assertThat(actual).isEqualTo(except);
+        assertThat(actual).isEqualTo(expected);
     }
 
 }
