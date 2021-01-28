@@ -1,4 +1,4 @@
-package pers.paopa.mockito.simple;
+package pers.paopa.mockito.stub;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
