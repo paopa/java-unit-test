@@ -1,3 +1,12 @@
+## Test Doubles
+Test Doubles測試替身的種類可以分得很細：
+ - Stub
+ - Mock
+ - Fake
+ - Spy
+ - Dummy
+
+
 ## 比較Fake，Stub，Mock：
 
 當想要配置替換的相依物件的行為時，使用Stub。 
