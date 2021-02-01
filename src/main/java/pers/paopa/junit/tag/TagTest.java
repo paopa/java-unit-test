@@ -10,12 +10,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages(value = {"pers.paopa.junit.tag"})
-@IncludeTags(value = {"BadTest","GoodTest"})
+@IncludeTags(value = {"BadTest", "GoodTest"})
 public class TagTest {
 
 }
 
-class TagsTest{
+class TagsTest {
     @Test
     @Tag(value = "GoodTest")
     public void goodTest() {
