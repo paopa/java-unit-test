@@ -41,6 +41,12 @@
             <version>5.7.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>de.bechte.junit</groupId>
+            <artifactId>junit-hierarchicalcontextrunner</artifactId>
+            <version>4.12.2</version>
+        </dependency>
+
         <!-- AssertJ -->
         <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
         <dependency>
