@@ -1,8 +1,8 @@
 # folder
-/.idea
-/target
+.idea
+target
 /out
-src/main/java/META-INF/
+base/src/main/java/META-INF/
 
 # file
 
